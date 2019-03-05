@@ -64,7 +64,7 @@ setInterval(() => {
    * Add custom application properties to the message contingent on situational factors.
    * An IoT hub can filter on these properties without access to the message body.
    */
-  message.properties.add('levelValue', `${levelValue}`)
+  message.properties.add('level', `${levelValue}`)
   console.log(`Sending message: ${message.getData()}`)
   console.log(`Conditions are at ${levelValue} level`)
 
